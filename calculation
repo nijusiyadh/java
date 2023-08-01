@@ -1,0 +1,18 @@
+class calculation
+{
+ public static void main(String args[])
+ {
+  int x = Integer,parseInt(args[0]);
+  int y = Integer.parseint(args[1]);
+  int sum = x + y;
+  int diff = x - y;
+  int pro = x * y;
+  int Quo = x/y;
+  int remi = x % y;
+  System.out.print("sum = "+sum);
+  System.out.print("differense = "+diff);
+  System.out.print("product = "+pro);
+  System.out.print("Quotiant = "+Quo);
+  System.out.print("reminder = "+remi);
+ }
+}
