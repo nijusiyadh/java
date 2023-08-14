@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+class transpose
+{
+  public static void main(String args[])
+ { 
+  int sum=0;
+  Scanner sc = new Scanner(System.in);
+  System.out.print("Enter the number of rows : ");
+  int  a = sc.nextInt();
+  System.out.print("Enter the number of column : ");
+  int  b = sc.nextInt();
+  if (a!=b)
+  {
+    System.out.print("The given metrix is not a Square Matrix ");  
+  }
+  else
+  {
+    int c= a*b;
+    int m[][] = new int[a][b];
+    System.out.print("Give "+c+" elements :");
+    for(int i=0;i<a;i++)
+    {
+      for(int j=0;j<b;j++)
+      {
+          m[i][j] = sc.nextInt();
+      }
+    }
+    System.out.println("The Matrix is :");
+    for(int i=0;i<a;i++)
+    {
+      for(int j=0;j<b;j++)
+      {
+          System.out.print(m[i][j]+" ");
+      }
+      System.out.println();
+    }
+   for(int i=0;i<a;i++)
+   {
+     sum=sum+(m[i][i]);
+   }
+   System.out.print("The trace of the matrix is = "+sum);
+   System.out.println();
+   System.out.println("The transpose the matrix is :");
+   for(int i=0;i<a;i++)
+    {
+      for(int j=0;j<b;j++)
+      {
+         System.out.print(m[j][i]+" ");
+      }
+      System.out.println();
+    }
+  }
+  }
+}
