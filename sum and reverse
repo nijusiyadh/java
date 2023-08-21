@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+class reverse
+{
+  void rev(int a)
+  {
+    int r = a;
+     System.out.print("Reverse of the number "+r+" = ");
+       while(r > 0)
+       {
+          int l = r % 10;
+          System.out.print(l+" ");
+          r = r/10;
+       }
+       System.out.println();
+  }
+  int s=0;
+  void add(int a)
+  {
+    int add = a;
+     System.out.print("Sum of the number "+add+" = ");
+       while(add > 0)
+       {
+          int l = add % 10;
+          s = s+l;
+          add = add/10;
+       }
+     System.out.print(s);
+  }
+}
+class sum
+{
+ public static void main(String args[])
+ {
+   Scanner sc = new Scanner(System.in);
+   reverse rv = new reverse();
+   System.out.print("Give a value :");
+   int v = sc.nextInt();
+   rv.rev(v);
+   rv.add(v);
+
+ }
+}
