@@ -13,9 +13,12 @@ class fibo {
     for(int i=0;i<n;i++)
     {
     int t = f + s;
-    System.out.print(t + " ");
-    f = s;
-    s = t;
+     if(t<=n)
+     {
+       System.out.print(t + " ");
+       f = s;
+       s = t;
+     }
     }
   }
 }
