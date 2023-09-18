@@ -1,3 +1,5 @@
+/* PROGRAM NO 4 */
+
 import java.util.Scanner;
 import java.lang.Math;
 class triangle
