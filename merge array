@@ -1,3 +1,5 @@
+/* PROGRAM NO 7 */
+
 class MergeArray
 {
     public static void main(String args[])
